@@ -15,7 +15,7 @@ const secBook = {
   title: 'Other World',
   aut: 'hugo',
   imag:
-    'https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_2.png',
+    'https://marketing4ecommerce.net/wp-content/uploads/2018/01/Depositphotos_3667865_m-2015-compressor.jpg',
 }
 const Book = (props) => {
   return (
