@@ -6,25 +6,24 @@ import './index.css'
 
 const firstBook = {
   title: 'Hello World',
-  aut: 'victor',
   imag:
     'https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png',
+  author: 'victor',
 }
 
 const secBook = {
   title: 'Other World',
-  aut: 'hugo',
   imag:
     'https://marketing4ecommerce.net/wp-content/uploads/2018/01/Depositphotos_3667865_m-2015-compressor.jpg',
+  author: 'hugo',
 }
 const Book = (props) => {
   return (
     <article className='bo'>
-      <img width={'200rem'} src={props.imag} alt='' />
+      <img width={'200rem'} height={'150rem'} src={props.imag} alt='' />
       <h1>{props.title}</h1>
-      <h2>{props.aut}</h2>
+      <h2>{props.author}</h2>
       <p>{props.job}</p>
-      <p>{props.title}</p>
       <p>{props.number}</p>
     </article>
   )
@@ -32,8 +31,18 @@ const Book = (props) => {
 const ListBook = () => {
   return (
     <section className='boolist'>
-      <Book imag={firstBook.imag} title={firstBook.title} />{' '}
-      <Book imag={secBook.imag} title={secBook.title} number={3} />
+      <Book
+        author={firstBook.author}
+        imag={firstBook.imag}
+        title={firstBook.title}
+        number={6 + 3}
+      />{' '}
+      <Book
+        imag={secBook.imag}
+        title={secBook.title}
+        author={secBook.author}
+        number={3}
+      />
     </section>
   )
 }
