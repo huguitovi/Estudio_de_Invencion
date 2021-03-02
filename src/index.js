@@ -20,7 +20,7 @@ const secBook = {
 const Book = (props) => {
   return (
     <article className='bo'>
-      <img src={props.imag} alt='' />
+      <img width={'200rem'} src={props.imag} alt='' />
       <h1>{props.title}</h1>
       <h2>{props.aut}</h2>
       <p>{props.job}</p>
