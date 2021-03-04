@@ -18,7 +18,7 @@ const secBook = {
   author: 'hugo',
 }
 const tirstBook = {
-  title: 'Hello Moon',
+  title: 'Hi Moon!',
   imag:
     'https://image.freepik.com/vector-gratis/vector-onda-azul-transparente_1055-7084.jpg',
   author: 'Ezequiel',
@@ -43,6 +43,30 @@ const Book = (props) => {
 const ListBook = () => {
   return (
     <section className='boolist'>
+      <Book
+        author={firstBook.author}
+        imag={firstBook.imag}
+        title={firstBook.title}
+        number={6 + 3}
+      />{' '}
+      <Book
+        imag={secBook.imag}
+        title={secBook.title}
+        author={secBook.author}
+        number={3}
+      />{' '}
+      <Book
+        imag={gecBook.imag}
+        title={gecBook.title}
+        author={gecBook.author}
+        number={3}
+      />{' '}
+      <Book
+        imag={tirstBook.imag}
+        title={tirstBook.title}
+        author={tirstBook.author}
+        number={3}
+      />{' '}
       <Book
         author={firstBook.author}
         imag={firstBook.imag}
