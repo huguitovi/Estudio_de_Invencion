@@ -43,7 +43,7 @@ const ListBook = () => {
     <section className='boolist'>
       <Book
         author={firstBook.author}
-        imag={firstBook.img}
+        img={firstBook.img}
         title={firstBook.title}
         number={6 + 3}
       >
@@ -60,7 +60,7 @@ const ListBook = () => {
         </p>
       </Book>{' '}
       <Book
-        imag={secBook.img}
+        img={secBook.img}
         title={secBook.title}
         author={secBook.author}
         number={3}
@@ -73,37 +73,37 @@ const ListBook = () => {
         </p>
       </Book>
       <Book
-        imag={gecBook.img}
+        img={gecBook.img}
         title={gecBook.title}
         author={gecBook.author}
         number={3}
       />{' '}
       <Book
-        imag={tirstBook.img}
+        img={tirstBook.img}
         title={tirstBook.title}
         author={tirstBook.author}
         number={3}
       />{' '}
       <Book
         author={firstBook.author}
-        imag={firstBook.img}
+        img={firstBook.img}
         title={firstBook.title}
         number={6 + 3}
       />{' '}
       <Book
-        imag={secBook.img}
+        img={secBook.img}
         title={secBook.title}
         author={secBook.author}
         number={3}
       />{' '}
       <Book
-        imag={gecBook.img}
+        img={gecBook.img}
         title={gecBook.title}
         author={gecBook.author}
         number={3}
       />{' '}
       <Book
-        imag={tirstBook.img}
+        img={tirstBook.img}
         title={tirstBook.title}
         author={tirstBook.author}
         number={3}
