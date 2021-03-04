@@ -25,14 +25,14 @@ p {
 .boolist {
   width: 90vw;
   max-width: 1170px;
-  margin: 5rem auto;
+  margin: 1rem auto;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .boolist {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

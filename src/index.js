@@ -17,6 +17,18 @@ const secBook = {
     'https://marketing4ecommerce.net/wp-content/uploads/2018/01/Depositphotos_3667865_m-2015-compressor.jpg',
   author: 'hugo',
 }
+const tirstBook = {
+  title: 'Hello Moon',
+  imag:
+    'https://image.freepik.com/vector-gratis/vector-onda-azul-transparente_1055-7084.jpg',
+  author: 'Ezequiel',
+}
+
+const gecBook = {
+  title: 'Other Moon',
+  imag: 'https://www.idento.es/wp-content/uploads/2015/05/Png-vs-Jpg-1.jpg',
+  author: 'Fernando',
+}
 const Book = (props) => {
   return (
     <article className='bo'>
@@ -41,6 +53,18 @@ const ListBook = () => {
         imag={secBook.imag}
         title={secBook.title}
         author={secBook.author}
+        number={3}
+      />{' '}
+      <Book
+        imag={gecBook.imag}
+        title={gecBook.title}
+        author={gecBook.author}
+        number={3}
+      />{' '}
+      <Book
+        imag={tirstBook.imag}
+        title={tirstBook.title}
+        author={tirstBook.author}
         number={3}
       />
     </section>
