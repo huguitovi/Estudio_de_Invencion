@@ -48,6 +48,8 @@ const books = [
     img:
       'https://image.freepik.com/vector-gratis/vector-onda-azul-transparente_1055-7084.jpg',
     author: 'Ezequiel',
+    massage:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero nostrum in, nemo vitae perferendis quia possimus culpa nesciunt alias, illum maxime ullam exercitationem odio quas unde modi quos est? Officiis.',
   },
 
   {
@@ -60,24 +62,40 @@ const books = [
 const ListBook = () => {
   return (
     <section className='boolist'>
-      {books.map((book) => {
-        const { img, title, author } = book
-        return <Book book={book}></Book>
+      {books.map((book, index) => {
+        const { img, title, author, massage } = book
+        return <Book key={book.id} {...book}></Book>
       })}
     </section>
   )
 }
 
-function Book(props) {
-  console.log(props)
-
-  const { img, title, author, children } = props.book
+function Book({ img, title, author, massage }) {
+  const clickHandler = (e) => {
+    console.log(e)
+    console.log(e.target)
+    alert('Hello Wolrd')
+  }
+  const comlexExample = (author) => {
+    console.log(author)
+  }
   return (
-    <article className='bo'>
+    <article
+      className='bo'
+      onMouseOver={() => {
+        console.log(title)
+      }}
+    >
       <img width={'200rem'} height={'150rem'} src={img} alt='' class='center' />
-      <h2>{title}</h2>
+      <h2 onClick={() => console.log(title)}>{title}</h2>
       <h1>{author}</h1>
-      {children}
+      <p>{massage}</p>
+      <button type='button' onClick={clickHandler}>
+        click
+      </button>
+      <button type='button' onClick={() => comlexExample(author)}>
+        more complez example click
+      </button>
     </article>
   )
 }
