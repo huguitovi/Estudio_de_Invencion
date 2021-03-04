@@ -30,14 +30,22 @@ p {
   gap: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .boolist {
     grid-template-columns: repeat(4, 1fr);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .bo {
   background: rgb(255, 255, 255);
-  border-radius: 1rem;
+  border-radius: 2rem;
   padding: 1rem 2rem;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
